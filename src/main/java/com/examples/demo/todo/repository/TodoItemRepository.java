@@ -6,5 +6,5 @@ import com.examples.demo.todo.model.TodoItem;
 
 public interface TodoItemRepository extends MongoRepository<TodoItem, Long>{
 
-	
+	TodoItem findById(String id);
 }

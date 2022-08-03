@@ -26,8 +26,8 @@ public class TodoController {
 	}
 	
 	@GetMapping("/todo/{id}")
-	public TodoItem getById(@PathVariable Long id){
-		return repository.findById(id).get();
+	public TodoItem getById(@PathVariable String id){
+		return repository.findById(id);
 	}
 
 	@PostMapping("/save")
